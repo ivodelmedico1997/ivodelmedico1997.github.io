@@ -1,0 +1,118 @@
+<!doctype html5>
+<html lang="es">
+
+<head>
+  <title>ICM Calculadora</title>
+  
+  <link rel="icon" type="image/png" sizes="96x96" href="imagenes/favicon.png">
+  <!--Boostrap - CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!--pagina de estilo propia-->
+  <link rel="stylesheet" type="text/css" href="style/styleimc.css">
+</head>
+
+<body>
+    <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="row">
+        <div class="col col-md-12 ">
+          <h1 class="h1">CALCULANDO SU MASA MUSCULAR</h1>
+        </div>
+      </div>
+
+      <div class="col col-md-6">
+        <form name="miIndiceMuscular" id="formulario" action="" onsubmit="return validarIndiceMasaMuscular()">
+          <!--Altura-->
+          <div class="formulario__container">
+            <label for="Altura" class="label">
+              <strong>Ingrese su altura: </strong>
+              <input id="Altura" name="Altura" type="number"> <strong>(M)</strong>
+            </label>
+            <br>
+            <br>
+
+            <!--peso-->
+            <label for="Peso" class="label">
+              <strong>Ingrese su peso actual: </strong>
+              <input id="Peso" name="Peso" type="number"><strong>(Kg)</strong>
+            </label>
+            <br>
+            <br>
+
+            <input type="button" value="Calcular" id="botoncito" />
+            <br>
+            <br>
+            <!--Resultado-->
+            <label class="label"><strong>Su IMC:</strong>
+              <input type="text" id="IMC" disabled>
+              <p class="label__resultado--p" id="clasificacion"></p>
+            </label>
+          </div>
+          <br>
+          <br>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-md-12">
+        <script src="JS/calculadora.js"></script>
+        <div class="informacion">
+          <h1>¿Qué es la desnutrición?</h1>
+          <p><strong>
+              La desnutrición es una falta de nutrientes esenciales que afecta al crecimiento de los niños y aumenta su
+              vulnerabilidad a las enfermedades.
+              La calidad de los alimentos, y en especial el acceso a alimentos de origen animal (leche y derivados
+              lácteos, huevos, carne o pescado), es fundamental para la buena nutrición. Sin embargo, en los países con
+              menos recursos, muchas familias no pueden pagarse estos alimentos, y en situaciones de crisis ni siquiera
+              están disponibles. Cuando una persona no ingiere los nutrientes suficientes para cubrir sus necesidades,
+              el cuerpo empieza a consumirse: primero pierde grasa y luego músculo.
+              Una dieta equilibrada debe incluir proteínas y ácidos grasos esenciales, vitaminas y minerales como
+              calcio, potasio, zinc y hierro. La carencia de estos nutrientes impide que el niño pueda resistir a las
+              infecciones: sus defensas se debilitan y aumenta el riesgo de morir de malaria, neumonía, diarrea,
+              sarampión o sida, las cinco enfermedades responsables de la mitad de los casi 10 millones de muertes
+              anuales.
+            </strong></p>
+        </div>
+        <div class="informacion">
+          <h1>¿Qué es la delgades?</h1>
+          <p><strong>
+              Es una reducción difusa de la grasa corporal que determina un peso subnormal. En general se considera
+              delgado al individuo que tiene un eso corporal 10 % a 20 % menor que el peso real, reservándose la
+              designación de desnutrido para aquel cuyo peso es inferior al peso ideal en más 120%.
+              La delgadez de grado leve o moderado puede acompañarse de buena salud, pero en general se considera que
+              una pérdida de peso equivalente al 40 % 50 % del peso corporal es incompatible con la vida.
+            </strong></p>
+        </div>
+        <div class="informacion">
+          <h1>¿Qué es el sobrepeso?</h1>
+          <p><strong>
+              Cuando las personas hablan de tener sobrepeso, se refieren a que una persona tiene más grasa corporal de
+              la que es saludable. Todos tienen algo de grasa en el cuerpo, pero el exceso de grasa puede causar
+              problemas de salud. Los niños con sobrepeso tal vez tengan dificultad para moverse y seguir el ritmo de
+              sus amigos en el parque de juegos. Es posible, incluso, que sean el blanco de bromas o se sientan mal con
+              ellos mismos.
+            </strong></p>
+        </div>
+        <div class="informacion">
+          <h1>¿Qué es la obecidad?</h1>
+          <p><strong>
+              La obesidad es una enfermedad crónica tratable que aparece cuando existe un exceso de tejido adiposo
+              (grasa) en el cuerpo.
+              Los expertos advierten de que sus efectos más negativos se producen porque actúa como un agente que
+              acentúa y agrava a corto plazo y de forma muy evidente patologías graves como la diabetes, la
+              hipertensión, las complicaciones cardiovasculares (especialmente la cardiopatía isquémica), e incluso
+              algunos tipos de cáncer, como los gastrointestinales.
+              "La obesidad es una enfermedad crónica porque una vez que los mecanismos se estropean cuando uno acumula
+              grasa en exceso, realmente no se curan, siempre hay que estar vigilando.
+            </strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

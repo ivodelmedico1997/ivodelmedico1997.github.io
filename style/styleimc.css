@@ -1,0 +1,60 @@
+.h1 {color: blueviolet; border-style: double;border-color: darkred;
+background-color: bisque;
+    text-align: center;
+  }
+body{
+  background-image: url(https://www.engenerico.com/wp-content/uploads/2019/04/D%C3%ADa-Mundial-de-la-Salud-AESEG-Asocacion-Espanola-de-Medicamentos-Genericos.png); 
+}
+
+#formulario{
+  margin: 10% 0 45px 0;
+}
+.label{
+  font-weight: bold;
+  color: blue;
+  font-size: 18px; 
+  margin: 0 0 0 10%;
+
+}
+
+.navbar-nav {
+  align-items: flex-end;
+}
+.formulario__container{
+  height: 270px;
+  width: 450px;
+  padding: 12px;
+  border: 3px solid green;
+  background-color: rgb(36, 159, 216, 0.5);
+  
+  
+  
+}
+
+form div input {
+  width: 100px;
+}
+
+#botoncito {
+  margin: 0 0 0 33%;  
+}
+
+#altura{
+  margin: 0 0 0 45px;
+}
+
+#IMC {
+  margin: 0 0 0 130px;
+  width: 200px;
+}
+
+
+
+/*informacion*/
+.informacion {
+  margin: 100px;  
+}
+.informacion p strong {
+  background-color: rgb(228, 231, 31);
+}
+
